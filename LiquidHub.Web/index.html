@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <base href="/">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x- ng-cloak {
+            display: none !important;
+        }
+    </style>
+
+</head>
+<body ng-cloak>
+    <a ui-sref="demo">Demo</a>
+    <a ui-sref="home">Home</a>
+    <ui-view></ui-view>
+
+    <!--Import all require js files here-->
+
+    <script src="scripts/jquery-3.1.0.js"></script>
+    <script src="scripts/jquery-ui-1.12.0.js"></script>
+
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    <script src="scripts/angular-sanitize.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/AngularUI/ui-router.js"></script>
+
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/toastr.js"></script>
+    <script src="scripts/jquery.blockUI.js"></script>
+
+    <script src="scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+
+    <!--Core Js files-->
+    <script src="app/js/core/core-module.js"></script>
+    <script src="app/js/core/config.js"></script>
+    <script src="app/js/core/common-directives.js"></script>
+    <script src="app/js/core/common-services.js"></script>
+    <script src="app/js/core/constant-services.js"></script>
+    <script src="app/js/core/custom-filters.js"></script>
+    <script src="app/js/core/app.js"></script>
+
+    <!--Custom Service Js files-->
+    <!--Page Specific Js files-->
+    <script src="app/views/home/home.js"></script>
+    <script src="app/views/demo/demo.js"></script>
+</body>
+
+
+</html>
