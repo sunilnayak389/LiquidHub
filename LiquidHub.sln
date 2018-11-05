@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidHub.Web", "LiquidHub.Web\LiquidHub.Web.csproj", "{4244C3E2-E7D5-4EB3-914F-F123EC1FE6E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidHubAPI", "LiquidHubAPI\LiquidHubAPI.csproj", "{A97C855F-9609-4AA0-A78A-01097CDA4467}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4244C3E2-E7D5-4EB3-914F-F123EC1FE6E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4244C3E2-E7D5-4EB3-914F-F123EC1FE6E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4244C3E2-E7D5-4EB3-914F-F123EC1FE6E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A97C855F-9609-4AA0-A78A-01097CDA4467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97C855F-9609-4AA0-A78A-01097CDA4467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97C855F-9609-4AA0-A78A-01097CDA4467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97C855F-9609-4AA0-A78A-01097CDA4467}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

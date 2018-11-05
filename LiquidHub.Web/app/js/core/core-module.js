@@ -7,7 +7,7 @@
 
         /*Our reusable cross app code modules
          * 'blocks.exception',*/
-       'myApp.CommonDirectives','CommonServices',
+        'myApp.CommonDirectives', 'CommonServices','demoservice',
 
         /*3rd Party modules */
         'ui.bootstrap'

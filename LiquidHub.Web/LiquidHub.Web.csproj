@@ -75,6 +75,7 @@
     <Content Include="app\js\core\constant-services.js" />
     <Content Include="app\js\core\core-module.js" />
     <Content Include="app\js\core\custom-filters.js" />
+    <Content Include="app\js\sevices\demo.service.js" />
     <Content Include="app\views\demo\demo.html" />
     <Content Include="app\views\demo\demo.js" />
     <Content Include="app\views\home\home.html" />
@@ -1203,9 +1204,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\js\sevices\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
