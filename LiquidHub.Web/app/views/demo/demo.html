@@ -11,25 +11,84 @@
 
 <div class="container">
     <div class="panel">
+
+        <ul class="nav nav-pills">
+            <li role="presentation" ng-class="{ active: $state.includes('form') }"><a ui-sref="demo">Home</a></li>
+            <li role="presentation" ng-class="{ active: $state.includes('demo.form') }"><a ui-sref="demo.form">Form</a></li>
+            <li role="presentation" ng-class="{ active: $state.includes('demo.message') }"><a ui-sref="demo.message">Messages</a></li>
+        </ul>
+
         <div class="panel-heading border">
             <h2>
                 Data table using jquery datatable in Angularjs
             </h2>
         </div>
         <div class="panel-body">
-            <table id="example" class="display" style="width:100%">
+            <!--<table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Extn.</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+
+        </table>-->
+
+            <table id="example" class="table table-bordered bordered table-striped table-condensed datatable" ui-jq="dataTable" ui-options="dataTableOpt">
+
+
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th>Name</th>
                         <th>Position</th>
                         <th>Office</th>
-                        <th>Extn.</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
+                        <th>Age</th>
+                        <th>Start Date</th>
                     </tr>
                 </thead>
-               
-            </table> 
+
+
+                <tfoot>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start Date</th>
+                    </tr>
+                </tfoot>
+
+
+                <tbody>
+                    <tr ng-repeat="n in data">
+                        <td>{{$index+1}}</td>
+                        <td>{{n[0]}}</td>
+                        <td>{{n[1]}}</td>
+                        <td>{{n[2]}}</td>
+                        <td>
+                            <a href="http://78boe99prod/ufd/trees1/cfc/tree_service.cfc?key={{n[3]}}&returnformat=json">
+                                {{n[3]}}
+                            </a>
+
+                        </td>
+                        <td>{{n[4] | date:'dd/MM/yyyy'}}</td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+
+        </div>
+
+        <div class="container">
+            <ui-view></ui-view>
         </div>
     </div>
 </div>

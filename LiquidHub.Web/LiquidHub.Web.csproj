@@ -80,6 +80,7 @@
     <Content Include="app\views\demo\demo.js" />
     <Content Include="app\views\home\home.html" />
     <Content Include="app\views\home\home.js" />
+    <Content Include="app\views\registration\form.html" />
     <Content Include="content\bootstrap-theme.css" />
     <Content Include="content\bootstrap-theme.min.css" />
     <Content Include="content\bootstrap.css" />

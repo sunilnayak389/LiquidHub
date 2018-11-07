@@ -2373,6 +2373,29 @@
                 return filtered;
             };
         })
+        .directive('gmail', function () {
+            return {
+                require: 'ngModel',
+                link: function (scope, elm, attrs, ctrl) {
+                    var EMAIL_REGEXP = /^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$/;
+                    ctrl.$validators.email = function (modelValue, viewValue) {
+                        if (ctrl.$isEmpty(modelValue)) {
+                            // consider empty models to be valid
+                            return true;
+                        }
+
+                        if (EMAIL_REGEXP.test(viewValue)) {
+                            // it is valid
+                            return true;
+                        }
+
+                        // it is invalid
+                        return false;
+                    };
+                }
+            };
+        })
+
         // This can be further enhanced to include more messages.
         .factory('csGridService', [
             '$rootScope', function ($rootScope) {

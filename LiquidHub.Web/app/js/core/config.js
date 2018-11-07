@@ -131,6 +131,11 @@
                 templateUrl: config.baseURL + 'app/views/demo/demo.html',
                 controller: "demoCtlr as vm"
             })
+            .state("demo.form", {
+                url: "/form",
+                templateUrl: config.baseURL + 'app/views/registration/form.html',
+                controller: "demoCtlr as vm"
+            })
          //.state("employee", {
          //    url: "/employee/:empId",
          //    templateUrl: config.baseURL + 'employee/Index',
