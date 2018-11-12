@@ -18,7 +18,35 @@
 
     function demoCtlr($scope, $q, demoService) {
         var vm = this;
+
         vm.message = "Welcome Admin";
+        //$watch
+        $scope.name = 'www.inovateur.com';
+        $scope.counter = 0;
+        $scope.$watch('name', function (newValue, oldValue) {
+            $scope.counter = $scope.counter + 1;
+            console.log($scope.counter);
+        });
+// For digest cycle demo
+
+        $scope.datetime = new Date();
+
+        $scope.updateTime = function () {
+            $scope.datetime = new Date();
+            console.log($scope.datetime);
+        }
+
+        document.getElementById("updateTimeButton").addEventListener('click', function () {
+            console.log("update time clicked");
+            $scope.datetime = new Date();
+
+            console.log($scope.datetime);
+        });
+        //
+
+
+
+
         $scope.data = [];
 
         // function to submit the form after all validation has occurred			
